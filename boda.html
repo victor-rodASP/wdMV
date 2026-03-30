@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>María & Víctor | Nos casamos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-optimized.jpg" fetchpriority="high" />
+  <link rel="stylesheet" href="css/style.css?v=20260330g" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">M<br>&V</div>
+      <ul class="menu">
+        <li><a class="active" href="#inicio">Inicio</a></li>
+        <li><a href="#detalles">Detalles</a></li>
+        <li><a href="#lugar">Lugar</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Nos casamos</div>
+        <h1 class="names">
+          María <span class="amp">&</span> Víctor
+        </h1>
+        <div class="hero-meta">
+          <div>31 · Octubre · 2026</div>
+          <div class="hero-place">Hacienda Lagunillas · Querétaro</div>
+        </div>
+        <div class="hero-divider" aria-hidden="true">
+          <span></span>
+        </div>
+        <a href="#detalles" class="scroll-indicator" aria-label="Ver más"></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-wrap">
+    <div class="container countdown-grid reveal">
+      <div class="countdown">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days">199</div>
+          <div class="countdown-label">Días</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">12</div>
+          <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">45</div>
+          <div class="countdown-label">Minutos</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">28</div>
+          <div class="countdown-label">Segundos</div>
+        </div>
+      </div>
+
+      <div class="countdown-quote serif">
+        “Hay noches que se viven una sola vez, y esta será nuestra favorita.”
+      </div>
+    </div>
+  </section>
+
+  <section class="light-section details-location" id="detalles">
+    <div class="container details-grid">
+      <div class="reveal">
+        <h2 class="panel-title">Detalles</h2>
+        <div class="event-cards">
+          <article class="event-card">
+            <div class="icon">⛪</div>
+            <div class="event-name">Ceremonia</div>
+            <div class="event-time serif">17:30 hrs</div>
+            <div class="event-place">Parroquia del Sagrado Corazón de Jesús.</div>
+            <div class="event-address">Manuel Gómez Morín 1440, Lagunillas, 76980 La Purísima, Qro.</div>
+          </article>
+
+          <article class="event-card">
+            <div class="icon">🥂</div>
+            <div class="event-name">Recepción</div>
+            <div class="event-time serif">19:00 hrs</div>
+            <div class="event-place">Hacienda Lagunillas</div>
+            <div class="event-address">Hacienda Lagunillas, Manuel Gómez Morín 1440, Lagunillas, 76980 La Purísima, Qro.</div>
+          </article>
+        </div>
+      </div>
+
+      <div class="location-box reveal" id="lugar">
+        <h2 class="panel-title">Lugar</h2>
+        <div class="map-card">
+          <div class="map-thumb">
+            <div class="map-pin"></div>
+          </div>
+          <div class="map-action">
+            <a class="btn-outline-dark" href="https://maps.app.goo.gl/c6hwz1N5mPF8ASNp7" target="_blank" rel="noopener noreferrer">
+              Ver cómo llegar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-showcase" id="dresscode">
+    <div class="container showcase-grid">
+      <div class="dress-copy reveal">
+        <h2 class="panel-title">Dress Code</h2>
+        <h3>Formal elegante</h3>
+        <p>
+          Te sugerimos vestir en tonos oscuros, grises o neutros.
+        </p>
+      </div>
+
+      <div class="mood-grid reveal">
+        <img src="look-1.jpg" alt="Inspiración traje oscuro">
+        <img src="look-2.jpg" alt="Inspiración vestido elegante">
+        <img src="look-3.jpg" alt="Inspiración traje gris formal">
+        <img src="look-4.jpg" alt="Inspiración tacones oscuros">
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp" id="rsvp">
+    <div class="container rsvp-inner reveal">
+      <div class="eyebrow">Confirma tu asistencia</div>
+      <div class="rsvp-card">
+
+
+        <form class="rsvp-form" id="rsvp-form" novalidate>
+          <div class="invite-summary" id="invite-summary" hidden>
+            <div class="invite-summary-grid">
+              <div class="invite-chip">
+                <span>Invitacion</span>
+                <strong id="summary-name">-</strong>
+              </div>
+              <div class="invite-chip">
+                <span>ID</span>
+                <strong id="summary-id">-</strong>
+              </div>
+
+              <div class="invite-chip">
+                <span>Lugares asignados</span>
+                <strong id="summary-allowed">0</strong>
+              </div>
+              <div class="invite-chip">
+                <span>Estado</span>
+                <strong id="summary-status">Pendiente</strong>
+              </div>
+            </div>
+            <p class="invite-helper" id="summary-helper"></p>
+          </div>
+
+          <div class="rsvp-fields" id="rsvp-fields" hidden>
+            <label class="field" for="attendance-count">
+              <span>Numero de asistentes</span>
+              <select id="attendance-count" name="attendanceCount" required>
+                <option value="">Selecciona una opcion</option>
+              </select>
+            </label>
+
+            <div class="hotel-card" id="hotel-card" hidden>
+              <div class="hotel-head">
+                <div>
+                  <p class="hotel-eyebrow">Hospedaje</p>
+                  <h3 class="hotel-title">Reserva tu habitacion</h3>
+                </div>
+                <a
+                  class="hotel-link"
+                  id="hotel-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hidden
+                >
+                  Ver informacion y tarifas
+                </a>
+              </div>
+
+              <p class="hotel-copy" id="hotel-copy">
+                Esta invitacion incluye acceso al modulo de hospedaje.
+              </p>
+
+              <div class="hotel-grid">
+                <label class="field" for="hotel-needed">
+                  <span>¿Necesitan hospedaje?</span>
+                  <select id="hotel-needed" name="hotelNeeded">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="yes">Si, necesitamos hospedaje</option>
+                    <option value="no">No, gracias</option>
+                  </select>
+                </label>
+
+                <label class="field" for="hotel-rooms">
+                  <span>Habitaciones</span>
+                  <select id="hotel-rooms" name="hotelRooms">
+                    <option value="">Selecciona una opcion</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" id="submit-rsvp">
+              Confirmar asistencia <span>→</span>
+            </button>
+          </div>
+
+          <p class="rsvp-status" id="rsvp-status" role="status" aria-live="polite">
+            Cargando tu invitacion...
+          </p>
+
+          <div class="rsvp-debug" id="rsvp-debug" aria-live="polite">
+            <div class="rsvp-debug-title">Debug RSVP</div>
+            <pre class="rsvp-debug-log" id="rsvp-debug-log">Iniciando...</pre>
+          </div>
+        </form>
+      </div>
+
+      <p class="rsvp-note serif">
+        Tu respuesta nos ayudará a vivir esta noche contigo.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container reveal">
+      <div class="footer-monogram">M&V</div>
+      <div class="footer-date">31 · Octubre · 2026</div>
+      <div class="footer-text serif">Nos vemos ahí.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js?v=20260330g"></script>
+</body>
+</html>
